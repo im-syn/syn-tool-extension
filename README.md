@@ -1,4 +1,5 @@
 # SYN Tool Extension
+![image](https://github.com/user-attachments/assets/c68da06a-fc65-40ac-9578-50372002759f)
 
 Welcome to the **SYN Tool Extension**! This extension is designed to support users who are accessing adult content by allowing them to browse, manage, and interact with paid adult content across various platforms for FREE.
 
