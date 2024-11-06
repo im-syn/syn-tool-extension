@@ -82,12 +82,7 @@ If you'd like to contribute to the project, feel free to fork the repository and
 
 ## Contact
 
-For any questions, issues, or inquiries, please feel free to reach out via email at **[your-email@example.com](mailto:your-email@example.com)** or open an issue on GitHub.
-
-## Acknowledgements
-
-- Thanks to the contributors who have helped make this project possible.
-- Special thanks to **[Contributor Name]** for their support and feedback.
+For any questions, issues, or inquiries, please feel free to reach out via DISCORD SERVER or open an issue on GitHub.
 
 ## Screenshots
 
