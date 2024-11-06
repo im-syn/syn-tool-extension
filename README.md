@@ -1,4 +1,4 @@
-[# SYN Tool Extension
+# SYN Tool Extension
 
 Welcome to the **SYN Tool Extension**! This extension is designed to support users who are accessing adult content by allowing them to browse, manage, and interact with paid adult content across various platforms for FREE.
 
@@ -93,4 +93,3 @@ Here are some screenshots of the extension in action:
 
 Thank you for using **SYN Tool Extension**! We hope it enhances your experience with adult content management.
 
-](https://github.com/im-syn/syn-tool-extension/releases/tag/demo)
