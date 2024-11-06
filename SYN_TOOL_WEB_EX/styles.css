@@ -1,0 +1,428 @@
+/* General Popup Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+/* Input Styles */
+input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #03DAC6;
+    outline: none;
+    background-color: #2C2C2C;
+    color: #E0E0E0;
+    width: 90%;
+    transition: border-color 0.3s;
+    scrollbar-width: thin;
+    scrollbar-color: #03DAC6 #2C2C2C;
+}
+
+input[type="text"],
+textarea {
+    max-width: 280px;
+    max-height: fit-content;
+    min-width: 280px;
+    min-height: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #03DAC6;
+    outline: none;
+    background-color: #2C2C2C;
+    color: #E0E0E0;
+    width: 90%;
+    transition: border-color 0.3s;
+    scrollbar-width: thin;
+    scrollbar-color: #03DAC6 #2C2C2C;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #03DAC6;
+}
+
+#popup-container {
+    width: 300px;
+    padding: 15px;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+}
+/* Custom Scrollbar Styles */
+#popup-container::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+#popup-container::-webkit-scrollbar-track {
+    background: #2C2C2C;
+    /* Dark background to blend with the container */
+    border-radius: 10px;
+    /* Rounded corners for a smoother look */
+}
+
+#popup-container::-webkit-scrollbar-thumb {
+    background-color: #03DAC6;
+    /* Primary accent color */
+    border-radius: 10px;
+    border: 2px solid #2C2C2C;
+    /* Space around the scrollbar thumb to make it look separated */
+}
+
+#popup-container::-webkit-scrollbar-thumb:hover {
+    background-color: #00C9A6;
+    /* Slightly brighter color on hover */
+}
+/* Webkit-based browsers */
+input[type="text"]::-webkit-scrollbar,
+input[type="password"]::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+input[type="text"]::-webkit-scrollbar-track,
+input[type="password"]::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track {
+    background-color: #2C2C2C;
+}
+
+input[type="text"]::-webkit-scrollbar-thumb,
+input[type="password"]::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
+    background-color: #03DAC6;
+    border-radius: 10px;
+}
+header h1 {
+    color: #03DAC6;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.tab-button {
+    flex: 1;
+    background-color: transparent;
+    color: #03DAC6;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #03DAC6;
+}
+
+#tab-content {
+    margin: 15px 0;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+.logo {
+    width: 120px;
+}
+#rateButton {
+    padding: 8px 16px;
+    color: #03DAC6;
+    background-color: #333333;
+    border: 1px solid #03DAC6;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#rateButton:hover {
+    background-color: #03DAC6;
+    color: #121212;
+}
+.how-to-use {
+    margin-top: 10px;
+    background-color: #03DAC6;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #121212;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #333333;
+    color: #03DAC6;
+    font-size: 14px;
+}
+
+footer .status {
+    display: flex;
+    gap: 8px;
+}
+
+footer .divider {
+    color: #666666;
+}
+#rate-btn {
+    background-color: #03DAC6;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: #121212;
+    cursor: pointer;
+}
+
+#status-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.status-red {
+    background-color: red;
+}
+
+.status-green {
+    background-color: green;
+}
+
+.status-orange {
+    background-color: orange;
+}
+.profile-section {
+    display: none;
+    background-color: #1F1F1F;
+    padding: 2px;
+    text-align: center;
+    /* No border radius */
+}
+
+.profile-banner {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.profile-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    filter: brightness(0.6);
+}
+
+.profile-img {
+    position: absolute;
+    top: 10px;
+    /* Adjust to place it on top of the banner */
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #1F1F1F;
+    /* Matches the section background color */
+}
+
+.profile-info {
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+}
+
+.profile-username {
+    margin: 0;
+    font-size: 1.2em;
+    color: #03DAC6;
+}
+
+.profile-dates {
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.leak-btn {
+    background-color: #03DAC6;
+    color: #1F1F1F;
+    border: none;
+    width: 100%;
+    /* Full width */
+    padding: 8px 12px;
+    border-radius: 0;
+    /* No border radius */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.styled-line {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0;
+}
+
+.primary-btn {
+    background-color: #03DAC6;
+    color: #121212;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.primary-btn i {
+    font-size: 1.5rem;
+}
+
+.primary-btn:hover {
+    background-color: #1BC1BB;
+}
+.discord-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    padding: 8px 12px;
+    margin-top: 15px;
+    background-color: #5865F2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.discord-login-btn i {
+    font-size: 1.5rem;
+}
+.loading {
+    background-color: #ccc;
+    /* Change background color for loading state */
+    cursor: not-allowed;
+    /* Change cursor to indicate it's disabled */
+}
+.discord-login-btn:hover {
+    background-color: #4e5ec8;
+}
+
+/* Enhanced Announcement Block */
+.announcement-block {
+    background-color: #03DAC6;
+    color: #121212;
+    text-align: center;
+    padding-top: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.announcement-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.announcement-text {
+    margin-bottom: 10px;
+}
+
+.announcement-slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+
+.announcement-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* CSS for Supported Sites Section */
+.supported-sites {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.site-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.site-item.green {
+    background-color: #1BC1BB;
+}
+
+.site-item.red {
+    background-color: #E57373;
+}
+
+.site-status {
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+/* Alert Box Styling */
+.alert-box {
+    background-color: #FFCDD2;
+    border-left: 4px solid #D32F2F;
+    color: #B71C1C;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.alert-box-green {
+    background-color: #cdf5ff;
+    border-left: 4px solid #2fd3cb;
+    color: #1c5fb7;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}

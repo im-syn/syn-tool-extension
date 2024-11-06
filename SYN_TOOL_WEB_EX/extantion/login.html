@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SYN Tool - Login</title>
+        <script src="jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="popup-container">
+            <header class="header">
+                <img src="icons/logo_color.png" alt="SYN TOOL" class="logo">
+            </header>
+
+            <div class="login-form">
+                <h2>Login to SYN Tool</h2>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button class="primary-btn" id="loginBtn">Login</button>
+                <button class="discord-login-btn" id="discordLoginBtn">
+                    <i class="fab fa-discord"></i> Login with Discord
+                </button>
+                <p id="error-message" style="color: red; display: none;"></p>
+            </div>
+
+            <footer class="footer">
+                <div class="status">
+                    <span>SYN Server: <span id="serverStatus" class="status-indicator"></span></span>
+                    <span class="divider">|</span>
+                    <span>status: <span id="websiteStatus" class="status-indicator"></span></span>
+                </div>
+            </footer>
+        </div>
+
+        <script src="login.js"></script>
+    </body>
+
+</html>

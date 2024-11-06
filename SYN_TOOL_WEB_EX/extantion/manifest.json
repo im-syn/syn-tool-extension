@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "SYN Tool",
+  "version": "1.0",
+  "description": "SYN TOOL, Deep Search Tool - Beta Version for SYN Community",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon_color.png",
+      "48": "icons/icon_color.png",
+      "128": "icons/icon_color.png"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "alarms",
+    "storage",
+    "webRequest",
+    "identity",
+    "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "jquery.min.js"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ],
+  "icons": {
+    "16": "icons/icon_color.png",
+    "48": "icons/icon_color.png",
+    "128": "icons/icon_color.png"
+  }
+  
+}

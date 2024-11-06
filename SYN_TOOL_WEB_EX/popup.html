@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SYN Tool</title>
+        <script src="jquery.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="popup-container">
+            <!-- Enhanced Announcement Block with Image Slides -->
+            <div class="announcement-block" id="announcementBlock">
+                <div class="announcement-content">
+                    <p class="announcement-text" id="announcementText">THIS IS DEMO VERSION</p>
+                </div>
+            </div>
+
+            <header class="header">
+                <img src="icons/logo_color.png" alt="SYN TOOL" class="logo" id="logoImage">
+            </header>
+
+            <div class="tabs" id="tabs">
+                <button class="tab-button active" data-tab="about" id="tabHome">Home</button>
+                <button class="tab-button" data-tab="support" id="tabSupport">Supported</button>
+                <button class="tab-button" data-tab="account" id="tabAccount">Account</button>
+                <button class="tab-button" data-tab="help" id="tabHelp">Help</button>
+            </div>
+
+            <div id="tab-content">
+                <!-- About Section --><div class="alert-box" id="alertBox">
+                    <p>This trial version will expire in 3 days! Many features may be inactive or restricted.</p>
+                </div>
+                <div class="tab about active" id="aboutTab">
+                    <p>SYN is a general principle and value to preserve money against exploiters who sell their values,
+                        their souls, and most importantly their bodies for money. SYN is an idea against paid
+                        pornography basically! The money is yours.</p>
+                    <button class="how-to-use" id="how-to-use">How to use?!</button>
+
+                    <hr class="styled-line">
+
+                    <div class="profile-section">
+                        <div class="profile-banner">
+                            <img src="https://via.placeholder.com/400x100" alt="Profile Banner"
+                                class="profile-banner-img">
+                            <img src="https://via.placeholder.com/80" alt="Profile Image" class="profile-img"
+                                id="profileImage">
+                            <div class="profile-info">
+                                <h3 class="profile-username" id="profileUsername">Username</h3>
+                                <div class="profile-dates">
+                                    <span>Added Leaks: {date}</span> || <span>Updated Leaks: {date}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="primary-btn leak-btn" id="leakNowBtn">Leak Now!</button>
+                    </div>
+                </div>
+
+                <!-- Help Tab -->
+                <!-- Help Tab -->
+                <div class="tab help" id="helpTab">
+                    <!-- Alert Box for Demo Version Notification -->
+                    <div class="alert-box-green" id="alertBox">
+                        <p>Let us know in discord !</p>
+                    </div>
+                
+                    <!-- <p>Report error & seek help</p>
+                    <textarea type="text" id="reportText" placeholder="Tell us more!" required></textarea>
+                    <button class="how-to-use" id="sendReport">Send!</button> -->
+                </div>
+
+
+                <!-- Supported Websites Section -->
+                <div class="tab support" id="supportTab">
+                    <p>Supported websites will appear here.</p>
+                    <div class="supported-sites" id="supportedSitesList">
+                        <div class="site-item green">
+                            <span>www.patreon.com</span>
+                            <span class="site-status">Supported</span>
+                        </div>
+                        <div class="site-item green">
+                            <span>fansly.com</span>
+                            <span class="site-status">Supported</span>
+                        </div>
+                        <div class="site-item green">
+                            <span>onlyfans.com</span>
+                            <span class="site-status">Supported</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Tab -->
+                <div class="tab account" id="accountTab">
+                    <button class="how-to-use" id="Logout">Logout</button>
+                </div>
+            </div>
+
+            <footer class="footer" id="footer">
+                <div class="status">
+                    <span>SYN Server: <span id="serverStatus" class="status-indicator"></span></span>
+                    <span class="divider">|</span>
+                    <span>Status: <span id="websiteStatus" class="status-indicator"></span></span>
+                </div>
+            </footer>
+            <button class="primary-btn leak-btn" id="save-html" style="display: none;">SAVE CURRENT PAGE</button>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+
+</html>
